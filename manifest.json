@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "Collapsible Sidepanel",
+    "description": "A test case for sidepanels with matrilaize CSS collapsibles.",
+    "version": "0.1.0",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "side_panel": {
+        "default_path": "sidepanel.html"
+    },
+    "sandbox": {
+        "pages": [
+            "sidepanel.html"
+        ]
+    },
+    "permissions": [
+        "sidePanel"
+    ],
+    "action": {
+        "default_title": "Click to Open Panel"
+    },
+    "commands": {
+        "_execute_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+C",
+                "mac": "MacCtrl+Shift+C"
+            }
+        }
+    }
+}

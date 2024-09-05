@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="materialize.min.css">
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+            /* border: 3px solid #FF5F04;
+    box-sizing: border-box; */
+            margin-top: 1em;
+            margin-bottom: 1em;
+            /* overflow-y: auto; */
+        }
+
+        .container {
+            height: 100vh;
+            overflow-y: scroll;
+        }
+
+        .collapsible {
+            border: none;
+            box-shadow: none;
+        }
+
+        .collapsible-header,
+        .collapsible-body {
+            border-bottom: 0;
+        }
+
+        .collapsible-header {
+            border-left: 3px solid #ddd;
+            padding: 0;
+            display: block;
+        }
+
+        .collapsible-header::after {
+            content: none;
+        }
+
+        .active .collapsible-header::after {
+            content: none;
+        }
+
+        .collapsible-body {
+            border-left: 2px dotted #ddd;
+            padding: 0 0 0 .5rem;
+        }
+    </style>
+    <title>Materialize nested collapsibles</title>
+</head>
+
+<body>
+    <div class="container">
+        <ul class="collapsible">
+            <li class="active">
+                <div class="collapsible-header">
+                    <div class="row">
+                        <div class="col s2 m2 l2">1.</div>
+                        <div class="col s10 m10 l10">Lorem ipsum</div>
+                    </div>
+                </div>
+                <div class="collapsible-body">
+                    <div class="row">
+                        <div class="col s12 m12 l12">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            nonumy eirmod tempor invidunt
+                            ut
+                            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                            dolores
+                            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                            amet.
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt
+                            ut
+                            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                            dolores
+                            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                            amet.
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s2 m2 l2">@id</div>
+                        <div class="col s10 m10 l10">https://example.com/1234567890</div>
+                    </div>
+                    <div class="row">
+                        <div class="col s2 m2 l2">@id</div>
+                        <div class="col s10 m10 l10">https://example.com/1234567890</div>
+                    </div>
+                    <div class="row">
+                        <div class="col s2 m2 l2">@id</div>
+                        <div class="col s10 m10 l10">https://example.com/1234567890</div>
+                    </div>
+
+                </div>
+            </li>
+        </ul>
+        <ul class="collapsible">
+            <li class="active">
+                <div class="collapsible-header">
+                    <div class="row">
+                        <div class="col s2 m2 l2">2.</div>
+                        <div class="col s10 m10 l10">Lorem ipsum</div>
+                    </div>
+
+                </div>
+                <div class="collapsible-body">
+                    <ul class="collapsible">
+                        <li class="active">
+                            <div class="collapsible-header">
+                                <div class="row">
+                                    <div class="col s2 m2 l2">2.1.</div>
+                                    <div class="col s10 m10 l10">Lorem ipsum</div>
+                                </div>
+                            </div>
+                            <div class="collapsible-body">
+                                <div class="row">
+                                    <div class="col s12 m12 l12">
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor
+                                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+                                        et
+                                        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                                        takimata
+                                        sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+                                        sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                        magna
+                                        aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+                                        ea
+                                        rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                                        sit
+                                        amet.
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="collapsible">
+                        <li class="active">
+                            <div class="collapsible-header">
+                                <div class="row">
+                                    <div class="col s2 m2 l2">2.2.</div>
+                                    <div class="col s10 m10 l10">Lorem ipsum</div>
+                                </div>
+
+                            </div>
+                            <div class="collapsible-body">
+                                <div class="row">
+                                    <div class="col s12 m12 l12">
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor
+                                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+                                        et
+                                        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                                        takimata
+                                        sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+                                        sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                        magna
+                                        aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+                                        ea
+                                        rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                                        sit
+                                        amet.
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="collapsible">
+                        <li class="active">
+                            <div class="collapsible-header">
+                                <div class="row">
+                                    <div class="col s2 m2 l2">2.3.</div>
+                                    <div class="col s10 m10 l10">Lorem ipsum</div>
+                                </div>
+                            </div>
+                            <div class="collapsible-body">
+                                <div class="row">
+                                    <div class="col s12 m12 l12">
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor
+                                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+                                        et
+                                        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                                        takimata
+                                        sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+                                        sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                        magna
+                                        aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+                                        ea
+                                        rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                                        sit
+                                        amet.
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <ul class="collapsible">
+            <li class="active">
+                <div class="collapsible-header">
+                    <div class="row">
+                        <div class="col s2 m2 l2">3.</div>
+                        <div class="col s10 m10 l10">Lorem ipsum</div>
+                    </div>
+                </div>
+                <div class="collapsible-body">
+                    <div class="row">
+                        <div class="col s12 m12 l12">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut
+                            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                            dolores
+                            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                            amet.
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut
+                            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                            dolores
+                            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                            amet.
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul class="collapsible">
+            <li class="active">
+                <div class="collapsible-header">
+                    <div class="row">
+                        <div class="col s2 m2 l2">4.</div>
+                        <div class="col s10 m10 l10">Lorem ipsum</div>
+                    </div>
+                </div>
+                <div class="collapsible-body">
+                    <div class="row">
+                        <div class="col s12 m12 l12">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut
+                            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                            dolores
+                            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                            amet.
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut
+                            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                            dolores
+                            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                            amet.
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul class="collapsible">
+            <li class="active">
+                <div class="collapsible-header">
+                    <div class="row">
+                        <div class="col s2 m2 l2">5.</div>
+                        <div class="col s10 m10 l10">Lorem ipsum</div>
+                    </div>
+                </div>
+                <div class="collapsible-body">
+                    <div class="row">
+                        <div class="col s12 m12 l12">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut
+                            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                            dolores
+                            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                            amet.
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut
+                            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                            dolores
+                            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                            amet.
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <!-- Compiled and minified JavaScript -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+        <script src="materialize.js"></script>
+        <script>M.AutoInit();</script>
+    </div>
+
+    <!--
+      This HTML file opens when you click on icon from the toolbar.
+
+      To begin the development, run `npm run watch`.
+      To create a production bundle, use `npm run build`.
+    -->
+</body>
+
+</html>
